@@ -23,3 +23,6 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 echo hello PostgreeSQL
 echo hello PostgreSQL
+git pull origin main
+git log --color --all --branches --decorate --full-history
+psql --username=freecodecamp --dbname=postgres
